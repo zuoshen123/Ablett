@@ -45,4 +45,19 @@ pwdAlert.completeAction = ^(NSString *pwd){
 
 ![image](https://github.com/AblettChen/Ablett/blob/master/NavigationBar.gif)
 
+* ACShareView (社会化分享视图)
+
+> 使用方法（完整分享需要引入友盟SDK）
+
+``` Objective-C
+ACShareManager *shareMgr = [[ACShareManager alloc] init];
+    __weak typeof(&*shareMgr)weakShareMgr = shareMgr;
+    [self configNavigationRightItemWithObject:[UIImage imageNamed:@"btn_share_theme"] action:^{
+        [weakShareMgr showInView:self content:@"hello" image:nil url:nil];
+    }];
+```
+
+> 效果图
+
+![image](https://github.com/AblettChen/Ablett/blob/master/ACShareView.gif)
 

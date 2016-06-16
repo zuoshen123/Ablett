@@ -20,6 +20,9 @@
 #import "NSDate+ACAdd.h"
 #import "NSString+IDCardVerify.h"
 #import "NSString+Formatting.h"
+#import "UIColor+ACAdd.h"
+#import "NSString+ACAdd.h"
+#import "UIImage+ACAdd.h"
 
 #pragma Mark - Custom view
 

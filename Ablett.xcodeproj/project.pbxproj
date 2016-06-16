@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194CA77B1D126EBB003A7D40 /* ShareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA77A1D126EBB003A7D40 /* ShareVC.m */; };
+		194CA7851D126FE0003A7D40 /* ACShareItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA77E1D126FE0003A7D40 /* ACShareItem.m */; };
+		194CA7861D126FE0003A7D40 /* ACShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7801D126FE0003A7D40 /* ACShareManager.m */; };
+		194CA7871D126FE0003A7D40 /* ACShareModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7821D126FE0003A7D40 /* ACShareModule.m */; };
+		194CA7881D126FE0003A7D40 /* ACShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7841D126FE0003A7D40 /* ACShareView.m */; };
+		194CA78B1D1270E0003A7D40 /* UIColor+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA78A1D1270E0003A7D40 /* UIColor+ACAdd.m */; };
+		194CA78E1D1271FC003A7D40 /* NSString+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA78D1D1271FC003A7D40 /* NSString+ACAdd.m */; };
+		194CA7911D127494003A7D40 /* UIImage+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7901D127494003A7D40 /* UIImage+ACAdd.m */; };
 		195626971D0698B3006F6AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 195626961D0698B3006F6AF8 /* main.m */; };
 		1956269A1D0698B3006F6AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 195626991D0698B3006F6AF8 /* AppDelegate.m */; };
 		1956269D1D0698B3006F6AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1956269C1D0698B3006F6AF8 /* ViewController.m */; };
@@ -68,6 +76,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		194CA7791D126EBB003A7D40 /* ShareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareVC.h; sourceTree = "<group>"; };
+		194CA77A1D126EBB003A7D40 /* ShareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareVC.m; sourceTree = "<group>"; };
+		194CA77D1D126FE0003A7D40 /* ACShareItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShareItem.h; sourceTree = "<group>"; };
+		194CA77E1D126FE0003A7D40 /* ACShareItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACShareItem.m; sourceTree = "<group>"; };
+		194CA77F1D126FE0003A7D40 /* ACShareManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShareManager.h; sourceTree = "<group>"; };
+		194CA7801D126FE0003A7D40 /* ACShareManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACShareManager.m; sourceTree = "<group>"; };
+		194CA7811D126FE0003A7D40 /* ACShareModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShareModule.h; sourceTree = "<group>"; };
+		194CA7821D126FE0003A7D40 /* ACShareModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACShareModule.m; sourceTree = "<group>"; };
+		194CA7831D126FE0003A7D40 /* ACShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACShareView.h; sourceTree = "<group>"; };
+		194CA7841D126FE0003A7D40 /* ACShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACShareView.m; sourceTree = "<group>"; };
+		194CA7891D1270E0003A7D40 /* UIColor+ACAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ACAdd.h"; sourceTree = "<group>"; };
+		194CA78A1D1270E0003A7D40 /* UIColor+ACAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ACAdd.m"; sourceTree = "<group>"; };
+		194CA78C1D1271FC003A7D40 /* NSString+ACAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ACAdd.h"; sourceTree = "<group>"; };
+		194CA78D1D1271FC003A7D40 /* NSString+ACAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACAdd.m"; sourceTree = "<group>"; };
+		194CA78F1D127494003A7D40 /* UIImage+ACAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ACAdd.h"; sourceTree = "<group>"; };
+		194CA7901D127494003A7D40 /* UIImage+ACAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACAdd.m"; sourceTree = "<group>"; };
 		195626921D0698B3006F6AF8 /* Ablett.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ablett.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195626961D0698B3006F6AF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		195626981D0698B3006F6AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -183,6 +207,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		194CA77C1D126FE0003A7D40 /* ACShareView */ = {
+			isa = PBXGroup;
+			children = (
+				194CA77D1D126FE0003A7D40 /* ACShareItem.h */,
+				194CA77E1D126FE0003A7D40 /* ACShareItem.m */,
+				194CA77F1D126FE0003A7D40 /* ACShareManager.h */,
+				194CA7801D126FE0003A7D40 /* ACShareManager.m */,
+				194CA7811D126FE0003A7D40 /* ACShareModule.h */,
+				194CA7821D126FE0003A7D40 /* ACShareModule.m */,
+				194CA7831D126FE0003A7D40 /* ACShareView.h */,
+				194CA7841D126FE0003A7D40 /* ACShareView.m */,
+			);
+			path = ACShareView;
+			sourceTree = "<group>";
+		};
 		195626891D0698B3006F6AF8 = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +346,12 @@
 				19E934D61D1262F000FB4AD7 /* NSString+Formatting.m */,
 				19E934D81D1262F000FB4AD7 /* Luhn.h */,
 				19E934D91D1262F000FB4AD7 /* Luhn.m */,
+				194CA7891D1270E0003A7D40 /* UIColor+ACAdd.h */,
+				194CA78A1D1270E0003A7D40 /* UIColor+ACAdd.m */,
+				194CA78C1D1271FC003A7D40 /* NSString+ACAdd.h */,
+				194CA78D1D1271FC003A7D40 /* NSString+ACAdd.m */,
+				194CA78F1D127494003A7D40 /* UIImage+ACAdd.h */,
+				194CA7901D127494003A7D40 /* UIImage+ACAdd.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -330,6 +375,8 @@
 				19E9348E1D12497A00FB4AD7 /* CustomNavigaitonBarDetailVC.m */,
 				19E934901D124AC300FB4AD7 /* PayPwdVC.h */,
 				19E934911D124AC300FB4AD7 /* PayPwdVC.m */,
+				194CA7791D126EBB003A7D40 /* ShareVC.h */,
+				194CA77A1D126EBB003A7D40 /* ShareVC.m */,
 				195626F91D06AC75006F6AF8 /* NetworkViewController.h */,
 				195626FA1D06AC75006F6AF8 /* NetworkViewController.m */,
 				195626F21D06A828006F6AF8 /* CustomNavigation */,
@@ -413,6 +460,7 @@
 		19E934C41D1260A100FB4AD7 /* CustomUI */ = {
 			isa = PBXGroup;
 			children = (
+				194CA77C1D126FE0003A7D40 /* ACShareView */,
 				19E934C51D1260AA00FB4AD7 /* ACPayPwdView */,
 			);
 			path = CustomUI;
@@ -565,6 +613,7 @@
 				19E934BE1D125D0400FB4AD7 /* MASViewAttribute.m in Sources */,
 				19E934BC1D125D0400FB4AD7 /* MASConstraintMaker.m in Sources */,
 				19E934CD1D1260AA00FB4AD7 /* ACPwdInputView.m in Sources */,
+				194CA7861D126FE0003A7D40 /* ACShareManager.m in Sources */,
 				19E934E01D12630E00FB4AD7 /* NSDate+ACAdd.m in Sources */,
 				19E934D11D12620000FB4AD7 /* UILabel+ACAdd.m in Sources */,
 				195626F51D06AA9F006F6AF8 /* UIViewController+NavigationBar.m in Sources */,
@@ -573,7 +622,9 @@
 				19E934921D124AC300FB4AD7 /* PayPwdVC.m in Sources */,
 				19E934BF1D125D0400FB4AD7 /* MASViewConstraint.m in Sources */,
 				19E934C21D125D0400FB4AD7 /* View+MASAdditions.m in Sources */,
+				194CA7871D126FE0003A7D40 /* ACShareModule.m in Sources */,
 				19E934BA1D125D0400FB4AD7 /* MASCompositeConstraint.m in Sources */,
+				194CA78E1D1271FC003A7D40 /* NSString+ACAdd.m in Sources */,
 				19E9348F1D12497A00FB4AD7 /* CustomNavigaitonBarDetailVC.m in Sources */,
 				19E934DD1D1262F000FB4AD7 /* Luhn.m in Sources */,
 				1956269D1D0698B3006F6AF8 /* ViewController.m in Sources */,
@@ -582,14 +633,19 @@
 				19E934BD1D125D0400FB4AD7 /* MASLayoutConstraint.m in Sources */,
 				195626FB1D06AC75006F6AF8 /* NetworkViewController.m in Sources */,
 				195627B91D0EA8DC006F6AF8 /* UIViewController+NavigationBarAlpha.m in Sources */,
+				194CA78B1D1270E0003A7D40 /* UIColor+ACAdd.m in Sources */,
 				195626EA1D06A67A006F6AF8 /* ACBaseViewController.m in Sources */,
 				19E934991D12524000FB4AD7 /* DemoCell.m in Sources */,
+				194CA77B1D126EBB003A7D40 /* ShareVC.m in Sources */,
 				19E934C11D125D0400FB4AD7 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				194CA7911D127494003A7D40 /* UIImage+ACAdd.m in Sources */,
 				1956279D1D07C618006F6AF8 /* UIView+ACExtension.m in Sources */,
 				19E934DA1D1262F000FB4AD7 /* UITextField+Formatting.m in Sources */,
 				1956269A1D0698B3006F6AF8 /* AppDelegate.m in Sources */,
 				19E934C01D125D0400FB4AD7 /* NSArray+MASAdditions.m in Sources */,
 				19E934C31D125D0400FB4AD7 /* ViewController+MASAdditions.m in Sources */,
+				194CA7851D126FE0003A7D40 /* ACShareItem.m in Sources */,
+				194CA7881D126FE0003A7D40 /* ACShareView.m in Sources */,
 				19E934DB1D1262F000FB4AD7 /* NSString+IDCardVerify.m in Sources */,
 				195626DE1D06A26B006F6AF8 /* ACBaseNavigationController.m in Sources */,
 				195626971D0698B3006F6AF8 /* main.m in Sources */,

@@ -7,9 +7,10 @@
 //
 
 #import "CustomUIViewController.h"
+#import "DemoCell.h"
 #import "CustomNavigaitonBarVC.h"
 #import "PayPwdVC.h"
-#import "DemoCell.h"
+#import "ShareVC.h"
 
 #define kSection(index) [NSString stringWithFormat:@"section%ld",(long)index]
 
@@ -59,6 +60,9 @@ static NSString const*kTitle = @"title";
     }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"支付密码"]) {
         PayPwdVC *payPwdVc = [PayPwdVC new];
         [self.navigationController pushViewController:payPwdVc animated:YES];
+    }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"分享视图"]) {
+        ShareVC *shareVc = [ShareVC new];
+        [self.navigationController pushViewController:shareVc animated:YES];
     }
 }
 
@@ -68,7 +72,8 @@ static NSString const*kTitle = @"title";
     self.ac_navigationItem.title = @"custom UI";
     
     _dataDic = @{kSection(0l):@{kTitle:@[@"自定义 navigationBar", \
-                                         @"支付密码"]},
+                                         @"支付密码", \
+                                         @"分享视图"]},
                  kSection(1l):@{kTitle:@[@"..."]}
                  };
     
