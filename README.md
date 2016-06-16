@@ -52,7 +52,7 @@ pwdAlert.completeAction = ^(NSString *pwd){
 `AppDelegate.m`
 ``` Objective-C
 -(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-[[UpgradeManager shareInstance] checkUpgradeForRoutine];
+[ACShareManager registerShareInfo];
 }
 ```
 `shareViewController.m`
