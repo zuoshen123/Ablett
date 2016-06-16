@@ -11,6 +11,7 @@
 #import "CustomNavigaitonBarVC.h"
 #import "PayPwdVC.h"
 #import "ShareVC.h"
+#import "CountDownVC.h"
 
 #define kSection(index) [NSString stringWithFormat:@"section%ld",(long)index]
 
@@ -63,6 +64,9 @@ static NSString const*kTitle = @"title";
     }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"分享视图"]) {
         ShareVC *shareVc = [ShareVC new];
         [self.navigationController pushViewController:shareVc animated:YES];
+    }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"倒计时"]) {
+        CountDownVC *countDownVc = [CountDownVC new];
+        [self.navigationController pushViewController:countDownVc animated:YES];
     }
 }
 
@@ -73,7 +77,8 @@ static NSString const*kTitle = @"title";
     
     _dataDic = @{kSection(0l):@{kTitle:@[@"自定义 navigationBar", \
                                          @"支付密码", \
-                                         @"分享视图"]},
+                                         @"分享视图", \
+                                         @"倒计时"]},
                  kSection(1l):@{kTitle:@[@"..."]}
                  };
     

@@ -21,9 +21,8 @@
     self.ac_navigationItem.title = @"share view";
     
     ACShareManager *shareMgr = [[ACShareManager alloc] init];
-    __weak typeof(&*shareMgr)weakShareMgr = shareMgr;
     [self configNavigationRightItemWithObject:[UIImage imageNamed:@"btn_share_theme"] action:^{
-        [weakShareMgr showInView:self content:@"hello" image:nil url:nil];
+        [shareMgr showInView:self content:@"hello" image:nil url:nil];
     }];
     self.ac_navigationItem.rightBarButtonItem.tintColor = kTextColor;
     return self;

@@ -108,3 +108,39 @@ ACShareManager *shareMgr = [[ACShareManager alloc] init];
 
 ![image](https://github.com/AblettChen/Ablett/blob/master/ACShareView.gif)
 
+##### 倒计时按钮
+
+> 使用方法
+
+  * 引入 `UIButton+CountDown.h`
+  
+  ``` Objective-C
+  - (void)configurViews {
+    
+    self.countdownBtn = [UIButton buttonWithType:UIButtonTypeCustom]; /** UIButtonTypeCustom 否则会出现闪烁*/
+    self.countdownBtn.frame = CGRectMake(0, 0, 40*4, 40);
+    [self.countdownBtn setBackgroundColor:[UIColor blackColor]];
+    [self.countdownBtn setTitle:@"获取短信验证码" forState:UIControlStateNormal];
+    [self.countdownBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [self.countdownBtn.titleLabel setFont:[UIFont systemFontOfSize:16.f]];
+    [self.countdownBtn addTarget:self action:@selector(countdownAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:self.countdownBtn];
+    self.countdownBtn.center = self.view.center;
+  }
+
+  - (void)countdownAction:(id)sender {
+    [self.countdownBtn startWithTime:5
+                          title:@"获取短信验证码"
+                 countDownTitle:@"秒后重新发送"
+                      mainColor:[UIColor blackColor]
+                     countColor:[UIColor darkGrayColor]];
+  }
+  
+  ```
+  
+  
+> 效果图
+
+![image](https://github.com/AblettChen/Ablett/blob/master/CountDown.gif)
+
+
