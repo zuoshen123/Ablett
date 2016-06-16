@@ -1,6 +1,6 @@
 ###AblettKit
 
-> ablett 是自己在做项目是写的一些控件和工具，正在整理中...
+> ablett 是自己在做项目时写的一些控件和工具，正在整理中...
 
 * PayPwdView （支付密码）
 
@@ -18,7 +18,7 @@ pwdAlert.completeAction = ^(NSString *pwd){
 
 > 效果图
 
-![image](https://github.com/AblettChen/ACPayPwdView/blob/master/PayPwdView.gif)
+![image](https://github.com/AblettChen/Ablett/blob/master/PayPwdView.gif)
 
 * UIViewController+NavigationBar.h （自定义 NavigationBar）
 
@@ -44,6 +44,6 @@ pwdAlert.completeAction = ^(NSString *pwd){
 ```
 > 效果图
 
-![image](https://github.com/AblettChen/ACPayPwdView/blob/master/NavigationBar.gif)
+![image](https://github.com/AblettChen/Ablett/blob/master/NavigationBar.gif)
 
 
