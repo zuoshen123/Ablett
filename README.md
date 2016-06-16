@@ -2,25 +2,65 @@
 
 > ablett 是自己在做项目时写的一些控件和工具，正在整理中...
 
-* PayPwdView （支付密码）
+##### ACPayPwdView（设置支付密码、修改支付密码）、ACPayPwdAlert（验证支付密码）
 
 > 使用方法
 
-``` Objective-C  
-ACPayPwdAlert *pwdAlert = [[ACPayPwdAlert alloc] init];
-pwdAlert.title = @"请输入支付密码";
-pwdAlert.completeAction = ^(NSString *pwd){
-   NSLog(@"==pwd:%@", pwd);
-};
-[pwdAlert show];
+1. 设置支付密码
 
-```
+	* 引入 `ACPayPwdView.h`
+	
+	``` Objective-C
+	
+    self.payPwdView = [[ACPayPwdView alloc] init];
+    self.payPwdView.payPwdState = kACPayPwdStateSetting;
+    
+    __weak typeof(&*self.payPwdView)weakPayPwdView = self.payPwdView;
+    self.payPwdView.settingDidCompletion = ^(NSString *pwd) {
+    //发起请求，传给 server
+    NSLog(@"pwd:%@", pwd);
+    };
+    [self.view addSubview:self.payPwdView];
+    
+	```  
+
+2. 修改支付密码
+
+	*  引入 `ACPayPwdView.h`
+	
+	``` Objective-C
+	
+   	self.payPwdView = [[ACPayPwdView alloc] init];
+  		self.payPwdView.payPwdState = kACPayPwdStateVerify;
+   
+  		 __weak typeof(&*self.payPwdView)weakPayPwdView = self.payPwdView;
+   	self.payPwdView.verifyDidCompletion = ^(NSString *pwd) {
+       //发起请求，验证是否正确，如果正确，则改变为设置状态/ 如果错误，清空状态重新输入
+       weakPayPwdView.payPwdState = kACPayPwdStateSetting;
+   	};
+   	[self.view addSubview:self.payPwdView];
+	```
+	
+3. 验证支付密码
+
+	* 引入 `ACPayPwdAlert.h`
+
+	``` Objective-C 
+	 
+	ACPayPwdAlert *pwdAlert = [[ACPayPwdAlert alloc] init];
+	pwdAlert.title = @"请输入支付密码";
+	pwdAlert.completeAction = ^(NSString *pwd){
+	   NSLog(@"==pwd:%@", pwd);
+	};
+	[pwdAlert show];
+	
+	```
 
 > 效果图
 
-![image](https://github.com/AblettChen/Ablett/blob/master/PayPwdView.gif)
+![image](https://github.com/AblettChen/Ablett/blob/master/ACPayPwdView.gif)
 
-* UIViewController+NavigationBar.h （自定义 NavigationBar）
+#####  UIViewController+NavigationBar.h （自定义 NavigationBar）
 
 > 使用方法
 
@@ -45,7 +85,7 @@ pwdAlert.completeAction = ^(NSString *pwd){
 
 ![image](https://github.com/AblettChen/Ablett/blob/master/NavigationBar.gif)
 
-* ACShareView (社会化分享视图)
+##### ACShareView (社会化分享视图)
 
 > 使用方法（完整分享需要引入友盟SDK）
 

@@ -24,6 +24,7 @@ static const CGFloat dotDiameter = 10.f;
 - (instancetype)init {
     self = [super init];
     if (!self) return nil;
+    self.backgroundColor = [UIColor whiteColor];
     [self addNotifications];
     return self;
 }
@@ -31,6 +32,7 @@ static const CGFloat dotDiameter = 10.f;
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (!self) return nil;
+    self.backgroundColor = [UIColor whiteColor];
     [self addNotifications];
     return self;
 }
@@ -110,6 +112,16 @@ static const CGFloat dotDiameter = 10.f;
         _responder.hidden = YES;
     }
     return _responder;
+}
+
+#pragma mark - Public
+
+- (void)clear {
+    [self.secureDots enumerateObjectsUsingBlock:^(CAShapeLayer  *_Nonnull dot, NSUInteger idx, BOOL * _Nonnull stop) {
+        dot.hidden = YES;
+    }];
+    self.responder.text = @"";
+    [self setNeedsDisplay];
 }
 
 #pragma mark - Privite

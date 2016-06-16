@@ -8,6 +8,8 @@
 
 #import "PayPwdVC.h"
 #import "DemoCell.h"
+#import "PayPwdSettingVC.h"
+#import "PayPwdModifyVC.h"
 
 #define kSection(index) [NSString stringWithFormat:@"section%ld",(long)index]
 
@@ -52,10 +54,17 @@ static NSString const*kTitle = @"title";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"设置支付密码"]) {
-
+        
+        PayPwdSettingVC *payPwdVc = [PayPwdSettingVC new];
+        [self.navigationController pushViewController:payPwdVc animated:YES];
+        
     }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"修改支付密码"]) {
         
+        PayPwdModifyVC *payPwdModifyVc = [PayPwdModifyVC new];
+        [self.navigationController pushViewController:payPwdModifyVc animated:YES];
+        
     }else if ([_dataDic[kSection(indexPath.section)][kTitle][indexPath.row] isEqualToString:@"验证支付密码"]) {
+        
         ACPayPwdAlert *pwdAlert = [[ACPayPwdAlert alloc] init];
         pwdAlert.title = @"请输入支付密码";
         [pwdAlert show];

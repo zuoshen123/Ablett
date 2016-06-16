@@ -15,6 +15,9 @@
 		194CA78B1D1270E0003A7D40 /* UIColor+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA78A1D1270E0003A7D40 /* UIColor+ACAdd.m */; };
 		194CA78E1D1271FC003A7D40 /* NSString+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA78D1D1271FC003A7D40 /* NSString+ACAdd.m */; };
 		194CA7911D127494003A7D40 /* UIImage+ACAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7901D127494003A7D40 /* UIImage+ACAdd.m */; };
+		194CA7941D127E4A003A7D40 /* ACPayPwdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7931D127E4A003A7D40 /* ACPayPwdView.m */; };
+		194CA7971D12873B003A7D40 /* PayPwdSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7961D12873B003A7D40 /* PayPwdSettingVC.m */; };
+		194CA79A1D12A1BC003A7D40 /* PayPwdModifyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 194CA7991D12A1BC003A7D40 /* PayPwdModifyVC.m */; };
 		195626971D0698B3006F6AF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 195626961D0698B3006F6AF8 /* main.m */; };
 		1956269A1D0698B3006F6AF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 195626991D0698B3006F6AF8 /* AppDelegate.m */; };
 		1956269D1D0698B3006F6AF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1956269C1D0698B3006F6AF8 /* ViewController.m */; };
@@ -92,6 +95,12 @@
 		194CA78D1D1271FC003A7D40 /* NSString+ACAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ACAdd.m"; sourceTree = "<group>"; };
 		194CA78F1D127494003A7D40 /* UIImage+ACAdd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ACAdd.h"; sourceTree = "<group>"; };
 		194CA7901D127494003A7D40 /* UIImage+ACAdd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ACAdd.m"; sourceTree = "<group>"; };
+		194CA7921D127E4A003A7D40 /* ACPayPwdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ACPayPwdView.h; sourceTree = "<group>"; };
+		194CA7931D127E4A003A7D40 /* ACPayPwdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ACPayPwdView.m; sourceTree = "<group>"; };
+		194CA7951D12873B003A7D40 /* PayPwdSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPwdSettingVC.h; sourceTree = "<group>"; };
+		194CA7961D12873B003A7D40 /* PayPwdSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPwdSettingVC.m; sourceTree = "<group>"; };
+		194CA7981D12A1BC003A7D40 /* PayPwdModifyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayPwdModifyVC.h; sourceTree = "<group>"; };
+		194CA7991D12A1BC003A7D40 /* PayPwdModifyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayPwdModifyVC.m; sourceTree = "<group>"; };
 		195626921D0698B3006F6AF8 /* Ablett.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ablett.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		195626961D0698B3006F6AF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		195626981D0698B3006F6AF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -375,6 +384,10 @@
 				19E9348E1D12497A00FB4AD7 /* CustomNavigaitonBarDetailVC.m */,
 				19E934901D124AC300FB4AD7 /* PayPwdVC.h */,
 				19E934911D124AC300FB4AD7 /* PayPwdVC.m */,
+				194CA7951D12873B003A7D40 /* PayPwdSettingVC.h */,
+				194CA7961D12873B003A7D40 /* PayPwdSettingVC.m */,
+				194CA7981D12A1BC003A7D40 /* PayPwdModifyVC.h */,
+				194CA7991D12A1BC003A7D40 /* PayPwdModifyVC.m */,
 				194CA7791D126EBB003A7D40 /* ShareVC.h */,
 				194CA77A1D126EBB003A7D40 /* ShareVC.m */,
 				195626F91D06AC75006F6AF8 /* NetworkViewController.h */,
@@ -469,10 +482,12 @@
 		19E934C51D1260AA00FB4AD7 /* ACPayPwdView */ = {
 			isa = PBXGroup;
 			children = (
-				19E934C61D1260AA00FB4AD7 /* ACPayPwdAlert.h */,
-				19E934C71D1260AA00FB4AD7 /* ACPayPwdAlert.m */,
 				19E934C81D1260AA00FB4AD7 /* ACPwdInputView.h */,
 				19E934C91D1260AA00FB4AD7 /* ACPwdInputView.m */,
+				19E934C61D1260AA00FB4AD7 /* ACPayPwdAlert.h */,
+				19E934C71D1260AA00FB4AD7 /* ACPayPwdAlert.m */,
+				194CA7921D127E4A003A7D40 /* ACPayPwdView.h */,
+				194CA7931D127E4A003A7D40 /* ACPayPwdView.m */,
 			);
 			path = ACPayPwdView;
 			sourceTree = "<group>";
@@ -617,6 +632,7 @@
 				19E934E01D12630E00FB4AD7 /* NSDate+ACAdd.m in Sources */,
 				19E934D11D12620000FB4AD7 /* UILabel+ACAdd.m in Sources */,
 				195626F51D06AA9F006F6AF8 /* UIViewController+NavigationBar.m in Sources */,
+				194CA7941D127E4A003A7D40 /* ACPayPwdView.m in Sources */,
 				195626F01D06A7F5006F6AF8 /* RootTabBarController.m in Sources */,
 				19E9348C1D12493500FB4AD7 /* CustomNavigaitonBarVC.m in Sources */,
 				19E934921D124AC300FB4AD7 /* PayPwdVC.m in Sources */,
@@ -632,6 +648,7 @@
 				195626F81D06AB6F006F6AF8 /* CustomUIViewController.m in Sources */,
 				19E934BD1D125D0400FB4AD7 /* MASLayoutConstraint.m in Sources */,
 				195626FB1D06AC75006F6AF8 /* NetworkViewController.m in Sources */,
+				194CA79A1D12A1BC003A7D40 /* PayPwdModifyVC.m in Sources */,
 				195627B91D0EA8DC006F6AF8 /* UIViewController+NavigationBarAlpha.m in Sources */,
 				194CA78B1D1270E0003A7D40 /* UIColor+ACAdd.m in Sources */,
 				195626EA1D06A67A006F6AF8 /* ACBaseViewController.m in Sources */,
@@ -648,6 +665,7 @@
 				194CA7881D126FE0003A7D40 /* ACShareView.m in Sources */,
 				19E934DB1D1262F000FB4AD7 /* NSString+IDCardVerify.m in Sources */,
 				195626DE1D06A26B006F6AF8 /* ACBaseNavigationController.m in Sources */,
+				194CA7971D12873B003A7D40 /* PayPwdSettingVC.m in Sources */,
 				195626971D0698B3006F6AF8 /* main.m in Sources */,
 				195627A01D07C7F0006F6AF8 /* ACBaseTableViewController.m in Sources */,
 				19E934CC1D1260AA00FB4AD7 /* ACPayPwdAlert.m in Sources */,

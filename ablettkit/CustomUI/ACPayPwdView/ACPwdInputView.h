@@ -13,4 +13,7 @@
 @property (assign, nonatomic) NSUInteger length;                       ///< 支付密码长度
 @property (copy, nonatomic) void (^inputDidCompletion)(NSString *pwd); ///< 输入完成回调
 
+//清零
+- (void)clear;
+
 @end

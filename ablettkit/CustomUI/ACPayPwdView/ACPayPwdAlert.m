@@ -8,7 +8,6 @@
 
 #import "ACPayPwdAlert.h"
 #import "ACPwdInputView.h"
-#import "UIView+ACExtension.h"
 
 
 #define kColorComplete [UIColor colorWithRed:0.214 green:0.526 blue:1.000 alpha:1.000]
@@ -16,7 +15,7 @@
 #define kColorMask     [UIColor colorWithWhite:0.000 alpha:0.400]
 #define kFrameAlert    CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width*0.8, 168)
 #define kColorLine     [UIColor colorWithWhite:0.824 alpha:1.000]
-#define kColorCancel   [UIColor colorWithRed:0.967 green:0.159 blue:0.047 alpha:1.000]
+#define kColorCancel   [UIColor colorWithRed:0.969 green:0.161 blue:0.047 alpha:1.000]
 
 static const CGFloat duration = 0.25;
 
