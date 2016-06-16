@@ -49,6 +49,13 @@ pwdAlert.completeAction = ^(NSString *pwd){
 
 > 使用方法（完整分享需要引入友盟SDK）
 
+`AppDelegate.m`
+``` Objective-C
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+[[UpgradeManager shareInstance] checkUpgradeForRoutine];
+}
+```
+`shareViewController.m`
 ``` Objective-C
 ACShareManager *shareMgr = [[ACShareManager alloc] init];
     __weak typeof(&*shareMgr)weakShareMgr = shareMgr;
