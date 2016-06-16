@@ -6,7 +6,7 @@
 
 > 使用方法
 
-```
+``` Objective-C  
 ACPayPwdAlert *pwdAlert = [[ACPayPwdAlert alloc] init];
 pwdAlert.title = @"请输入支付密码";
 pwdAlert.completeAction = ^(NSString *pwd){
@@ -24,7 +24,7 @@ pwdAlert.completeAction = ^(NSString *pwd){
 
 > 使用方法
 
-```
+``` Objective-C
 - (instancetype)init {
     self = [super init];
     if (!self) return nil;
@@ -40,7 +40,6 @@ pwdAlert.completeAction = ^(NSString *pwd){
     
     return self;
 }
-
 ```
 > 效果图
 
